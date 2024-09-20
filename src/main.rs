@@ -349,7 +349,7 @@ fn main() -> Result<()> {
 
                     log::info!("Flash done");
 
-                    sleep(Duration::from_millis(500));
+                    // sleep(Duration::from_millis(500));
 
                     if !no_run {
                         log::info!("Now reset...");
@@ -363,7 +363,7 @@ fn main() -> Result<()> {
                         if watch_serial {
                             wlink::probe::watch_serial()?;
                         } else {
-                            sleep(Duration::from_millis(500));
+                            // sleep(Duration::from_millis(500));
                         }
                     }
                 }
